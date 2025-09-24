@@ -7,7 +7,7 @@ import {
   GET_SINGLE_PRODUCT_BEGIN,
   GET_SINGLE_PRODUCT_ERROR,
   GET_SINGLE_PRODUCT_SUCCESS,
-} from '../actions';
+} from '../constants/constants';
 
 const product_reducer = (state, action) => {
   if (action.type === GET_PRODUCTS_BEGIN) {

@@ -6,7 +6,7 @@ import {
   GET_SINGLE_ORDER_ERROR,
   GET_SINGLE_ORDER_SUCCESS,
   UPDATE_ORDER_STATUS,
-} from '../actions';
+} from '../constants/constants';
 
 const order_reducer = (state, action) => {
   if (action.type === GET_ORDERS_BEGIN) {

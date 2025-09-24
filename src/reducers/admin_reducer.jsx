@@ -3,7 +3,7 @@ import {
   GET_ADMINS_BEGIN,
   GET_ADMINS_ERROR,
   GET_ADMINS_SUCCESS,
-} from '../actions';
+} from '../constants/constants';
 
 const product_reducer = (state, action) => {
   if (action.type === GET_ADMINS_BEGIN) {
