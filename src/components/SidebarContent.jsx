@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NavItem from './NavItem';
-import { LinkItems } from '../utils/constants';
+import { LinkItems } from '../actions/actions';
 import { useUserContext } from '../contexts/user_context';
-import logo from '../assets/logo.svg';
 import {
   Box,
   CloseButton,
@@ -46,7 +45,7 @@ export default function SidebarContent({ onClose, ...rest }) {
       {...rest}
     >
       <Flex h='20' alignItems='center' mx='8' justifyContent='space-between'>
-        <Image src={logo} />
+        <Image src='/logo.png' />
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {Links.map((link) => (

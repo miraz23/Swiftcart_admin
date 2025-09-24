@@ -11,7 +11,7 @@ import {
   Stack,
 } from '@chakra-ui/react';
 import { MdAlternateEmail, MdDelete } from 'react-icons/md';
-import { Stars } from '.';
+import Stars from '../components/Stars';
 import { useProductContext } from '../contexts/product_context';
 
 function SingleProductReviews({ reviews, productId }) {

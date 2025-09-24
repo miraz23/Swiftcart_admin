@@ -24,7 +24,7 @@ import {
   HStack,
   useToast,
 } from '@chakra-ui/react';
-import { useOrderContext } from '../context/order_context';
+import { useOrderContext } from '../contexts/order_context';
 
 function OrdersTable({ orders }) {
   const toast = useToast();

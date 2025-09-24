@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../assets/logo.png';
 import { Image, Progress, VStack, Text, HStack } from '@chakra-ui/react';
 
 function PreLoader() {
@@ -11,11 +10,11 @@ function PreLoader() {
       justifyContent='center'
       alignItems='center'
     >
-      <Image src={logo} width='150px' />
+      <Image src='/logo.png' width='150px' />
       <Progress size='xs' w='40%' colorScheme='brown' isIndeterminate />
       <HStack>
         <Text fontWeight='300' color='gray.400'>
-          search less, wear more
+          The best finds, All in one place
         </Text>
       </HStack>
     </VStack>

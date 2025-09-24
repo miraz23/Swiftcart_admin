@@ -1,6 +1,7 @@
 import React from 'react';
-import SidebarContent from './SidebarContent';
-import MobileNav from './MobileNav';
+import SidebarContent from '../components/SidebarContent'
+import MobileNav from '../components/MobileNav';
+import ErrorBoundary from '../components/ErrorBoundary';
 import {
   Box,
   useColorModeValue,
@@ -8,7 +9,6 @@ import {
   DrawerContent,
   useDisclosure,
 } from '@chakra-ui/react';
-import { ErrorBoundary } from '.';
 
 export default function SidebarWithHeader({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();

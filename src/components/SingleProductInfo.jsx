@@ -14,7 +14,7 @@ import {
 import { formatPrice } from '../utils/helpers';
 import { useAdminContext } from '../contexts/admin_context';
 import { useProductContext } from '../contexts/product_context';
-import { Stars } from '.';
+import Stars from '../components/Stars';
 import { useOrderContext } from '../contexts/order_context';
 
 function SingleProductInfo({ product }) {

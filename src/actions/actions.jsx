@@ -21,7 +21,8 @@ export const orderStatusList = [
   { name: 'Delivered', value: 'delivered' },
 ];
 
-export const domain = process.env.REACT_APP_BACKEND_HOST;
+// Prefer env; fall back to a sensible local dev API origin
+export const domain = import.meta.env.VITE_BACKEND_HOST;
 export const auth_url = `${domain}/api/admin/auth`;
 export const login_url = `${domain}/api/admin/login`;
 export const register_url = `${domain}/api/admin/register`;

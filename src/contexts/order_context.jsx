@@ -41,8 +41,8 @@ export const OrderProvider = ({ children }) => {
     dispatch({ type: GET_ORDERS_BEGIN });
     try {
       const response = await axios.get(orders_url);
-      const { data } = response.data;
-      dispatch({ type: GET_ORDERS_SUCCESS, payload: data });
+      const { data } = response.data || {};
+      dispatch({ type: GET_ORDERS_SUCCESS, payload: Array.isArray(data) ? data : [] });
     } catch (error) {
       dispatch({ type: GET_ORDERS_ERROR });
     }
@@ -52,8 +52,8 @@ export const OrderProvider = ({ children }) => {
     dispatch({ type: GET_SINGLE_ORDER_BEGIN });
     try {
       const response = await axios.get(`${single_order_url}${id}`);
-      const { data } = response.data;
-      dispatch({ type: GET_SINGLE_ORDER_SUCCESS, payload: data });
+      const { data } = response.data || {};
+      dispatch({ type: GET_SINGLE_ORDER_SUCCESS, payload: data || {} });
     } catch (error) {
       dispatch({ type: GET_SINGLE_ORDER_ERROR });
     }

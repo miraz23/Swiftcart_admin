@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import logo from '../assets/logo.svg';
 import {
   IconButton,
   Avatar,
@@ -19,7 +18,7 @@ import {
   BreadcrumbItem,
   BreadcrumbLink,
 } from '@chakra-ui/react';
-import { useUserContext } from '../context/user_context';
+import { useUserContext } from '../contexts/user_context';
 import { FiMenu, FiChevronDown, FiChevronRight } from 'react-icons/fi';
 import { useLocation, Link } from 'react-router-dom';
 
@@ -79,7 +78,7 @@ export default function MobileNav({ onOpen, ...rest }) {
       />
 
       <Image
-        src={logo}
+        src={'/logo.png'}
         boxSize='150px'
         display={{ base: 'flex', md: 'none' }}
       />

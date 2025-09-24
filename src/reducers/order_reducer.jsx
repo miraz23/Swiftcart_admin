@@ -16,8 +16,8 @@ const order_reducer = (state, action) => {
     return { ...state, orders_error: true, orders_loading: false };
   }
   if (action.type === GET_ORDERS_SUCCESS) {
-    const orders = action.payload;
-    let recent_orders = action.payload;
+    const orders = Array.isArray(action.payload) ? action.payload : [];
+    let recent_orders = [...orders];
     recent_orders = recent_orders
       .sort((a, b) => {
         return new Date(b.createdAt) - new Date(a.createdAt);
