@@ -8,6 +8,7 @@ import {
   Flex,
   useColorModeValue,
   Image,
+  Text,
 } from '@chakra-ui/react';
 
 export default function SidebarContent({ onClose, ...rest }) {
@@ -44,8 +45,10 @@ export default function SidebarContent({ onClose, ...rest }) {
       h='full'
       {...rest}
     >
-      <Flex h='20' alignItems='center' mx='8' justifyContent='space-between'>
-        <Image src='/logo.png' />
+      <Flex h='20' alignItems='center' mx='8'>
+        <Image src='/logo.png' width='30px' height='30px'/>
+        <Text fontSize='30px' fontWeight='medium' color='black.500' ml='2' >Swift</Text>
+        <Text fontSize='30px' fontWeight='medium' color='brown.500' >Cart</Text>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
       {Links.map((link) => (
