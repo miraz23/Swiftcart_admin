@@ -17,25 +17,25 @@ Password: admin12345
 ![Admin Dashboard - Login](./docs/admin%20dashboard%20-%20%20login.png)
 
 ### Admin Dashboard — Home
-![Admin Dashboard - Home](./docs/admin%20dashboard%20-%20%20home.png)
+![Admin Dashboard - Home](./docs/admin%20dashboard%20-%20home.png)
 
 ### Admin Dashboard — Products
-![Admin Dashboard - Products](./docs/admin%20dashboard%20-%20%20products.png)
+![Admin Dashboard - Products](./docs/admin%20dashboard%20-%20products.png)
 
 ### Admin Dashboard — Add Product
-![Admin Dashboard - Add Product](./docs/admin%20dashboard%20-%20%20add%20product.png)
+![Admin Dashboard - Add Product](./docs/admin%20dashboard%20-%20add%20product.png)
 
 ### Admin Dashboard — Orders
-![Admin Dashboard - Orders](./docs/admin%20dashboard%20-%20%20orders.png)
+![Admin Dashboard - Orders](./docs/admin%20dashboard%20-%20orders.png)
 
 ### Admin Dashboard — Order Status
 ![Admin Dashboard - Order Status](./docs/admin%20dashboard%20-%20%20order%20status.png)
 
 ### Admin Dashboard — Admins
-![Admin Dashboard - Admins](./docs/admin%20dashboard%20-%20%20admins.png)
+![Admin Dashboard - Admins](./docs/admin%20dashboard%20-%20admins.png)
 
 ### Admin Dashboard — Add Admin
-![Admin Dashboard - Add Admin](./docs/admin%20dashboard%20-%20%20add%20admin.png)
+![Admin Dashboard - Add Admin](./docs/admin%20dashboard%20-%20add%20admin.png)
 
 ## Related Links
 
